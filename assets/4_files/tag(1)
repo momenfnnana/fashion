@@ -1,0 +1,8 @@
+BrightTag.site('ydg7T9K',function(s){
+s.dbe('facebook event id', 'Math.round(Math.random(10)*1000000000000000000000)',{pageId:3247041});
+s.dbe('product iid :: comma delimited', 'typeof(Product)!\x3d\x22undefined\x22? (Product.AvailibleProducts ? Product.AvailibleProducts.join(\x22,\x22) : Product.ProductIID) : \x22\x22',{pageId:3342404});
+s.domready(function(){
+s.tag('\x3cscript\x3e\nfbq(\x27track\x27, \x27ViewContent\x27, {\n    content_ids: \x27'+s.data('product iid :: comma delimited')+'\x27,\n    content_type: \x27product\x27\n}, {eventID: \x27'+s.data('facebook event id')+'\x27});\n\x3c/script\x3e\n',{tagId:7456887});
+s.tag('\x3c!-- Event snippet for Product page (page view) - YouTube conversion page --\x3e \x3cscript\x3e gtag(\x27event\x27, \x27conversion\x27, {\x27send_to\x27: \x27AW-981830880/kGj7CO_S2tgBEOCZltQD\x27}); \x3c/script\x3e',{tagId:7472265});
+});
+});

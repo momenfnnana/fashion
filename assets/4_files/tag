@@ -1,0 +1,10 @@
+BrightTag.site('ydg7T9K',function(s){
+s.dbe('product code - pdp', 'typeof(Product)!\x3d\x22undefined\x22? Product.ProductCode : \x22\x22',{pageId:3342404});
+s.dbe('country', 'Signal.Util.getCountryName(__siteChrome.context.getWebContext().browseCountry)',{pageId:3247041});
+s.dbe('currency', '__siteChrome.context.getWebContext().browseCurrency',{pageId:3247041});
+s.dbe('store', 'eventData[0].store',{pageId:3780945});
+s.domready(function(){
+s.tag('\x3cscript\x3e\ngtag(\x27event\x27,\x27view_item\x27, {\n  \x27value\x27: \x22'+s.data('product price :: gbp')+'\x22,\n  \x27items\x27: [\n    {\n      \x27id\x27: \x22'+s.data('product code - pdp')+'\x22, \n      \x27google_business_vertical\x27: \x27retail\x27\n    }]\n});\n\x3c/script\x3e',{tagId:7439776});
+s.tag('\x3c!--\nEvent snippet for ASOS | Global | Web | All Pages on http://asos.com: Please do not remove.\nPlace this snippet on pages with events you\u2019re tracking. \nCreation date: 08/25/2020\n--\x3e\n\x3cscript\x3e\n  gtag(\x27event\x27, \x27conversion\x27, {\n    \x27allow_custom_scripts\x27: true,\n    \x27u12\x27: \x27'+s.data('country')+'\x27,\n    \x27u4\x27: \x27'+s.data('store')+'\x27,\n    \x27u5\x27: \x27'+s.data('customer type :: nc or ec')+'\x27,\n    \x27u6\x27: \x27'+s.data('currency')+'\x27,\n    \x27send_to\x27: \x27DC-9827385/counter/allweb+standard\x27\n  });\n\x3c/script\x3e\n\n\x3c!-- End of event snippet: Please do not remove --\x3e',{tagId:7476169});
+});
+});
