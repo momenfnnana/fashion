@@ -20,29 +20,25 @@ const SignUpSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
 });
 const SignUp = ({ navigation }: StackNavigationProps<Routes, "SignUp">) => {
-  const {
-    handleChange,
-    handleBlur,
-    handleSubmit,
-    errors,
-    touched,
-  } = useFormik({
-    validationSchema: SignUpSchema,
-    initialValues: {
-      email: "",
-      password: "",
-      passwordConfirmation: "",
-      remember: true,
-    },
-    onSubmit: (values) => console.log(values),
-  });
+  const { handleChange, handleBlur, handleSubmit, errors, touched } = useFormik(
+    {
+      validationSchema: SignUpSchema,
+      initialValues: {
+        email: "",
+        password: "",
+        passwordConfirmation: "",
+        remember: true,
+      },
+      onSubmit: (values) => console.log(values),
+    }
+  );
   const password = useRef<RNTextInput>(null);
   const passwordConfirmation = useRef<RNTextInput>(null);
   const footer = (
     <Footer
       title="Already have an account?"
       action="Login here"
-      onPress={() => navigation.navigate("SignUp")}
+      onPress={() => navigation.navigate("Login")}
     />
   );
   return (

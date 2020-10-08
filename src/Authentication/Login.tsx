@@ -28,7 +28,7 @@ const Login = ({ navigation }: StackNavigationProps<Routes, "Login">) => {
     setFieldValue,
   } = useFormik({
     validationSchema: LoginSchema,
-    initialValues: { email: "", password: "", remember: false },
+    initialValues: { email: "", password: "", remember: true },
     onSubmit: (values) => console.log(values),
   });
   const password = useRef<RNTextInput>(null);
@@ -85,7 +85,7 @@ const Login = ({ navigation }: StackNavigationProps<Routes, "Login">) => {
               checked={values.remember}
               onChange={() => setFieldValue("remember", !values.remember)}
             />
-            <Button variant="transparent" onPress={() => true}>
+            <Button variant="transparent" onPress={() => navigation.navigate("ForgotPassword")}>
               <Text color="primary">Forgot Password</Text>
             </Button>
           </Box>

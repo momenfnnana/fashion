@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { ReactNode } from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import { Box, useTheme } from "../../components";
 
@@ -52,6 +52,10 @@ const Apple = () => (
     />
   </Svg>
 );
+
+interface SocialIconProps {
+  children: ReactNode;
+}
 
 const SocialIcon = ({ children }: SocialIconProps) => {
   const theme = useTheme();

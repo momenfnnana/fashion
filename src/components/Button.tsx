@@ -3,7 +3,8 @@ import { StyleSheet } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
 import { useTheme } from "@shopify/restyle";
 
-import { theme, Text } from "../components";
+import { Text } from "../components";
+import { Theme } from "./Theme";
 
 const styles = StyleSheet.create({
   container: {
@@ -19,7 +20,7 @@ interface ButtonProps {
   variant: "default" | "primary" | "transparent";
   label?: string;
   onPress: () => void;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const Button = ({ variant, label, onPress, children }: ButtonProps) => {

@@ -8,6 +8,7 @@ import {
 } from "./src/Authentication";
 import { theme } from "./src/components/Theme";
 import { NavigationContainer } from "@react-navigation/native";
+import {StatusBar} from 'expo-status-bar';
 // import * as Font from "expo-font";
 // import { AppLoading } from "expo";
 
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <ThemeProvider {...{ theme, assets }}>
       <SafeAreaProvider>
+        <StatusBar style="light"/>
         <NavigationContainer>
           <AuthenticationNavigator />
         </NavigationContainer>
