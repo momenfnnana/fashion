@@ -12,4 +12,6 @@ export type Routes = {
   Onbording: undefined;
   Welcome: undefined;
   Login: undefined;
+  SignUp: undefined;
+  ForgotPassword: undefined;
 };

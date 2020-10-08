@@ -1,6 +1,6 @@
 import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
-import { Box, useTheme } from "../components";
+import { Box, useTheme } from "../../components";
 
 // comming from this website https://react-svgr.com/playground/?native=true
 const Google = () => (
