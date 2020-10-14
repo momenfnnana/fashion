@@ -1,13 +1,5 @@
 import React, { useRef } from "react";
-import {
-  View,
-  StyleSheet,
-  Dimensions,
-  Image,
-} from "react-native";
-import { makeStyles, Theme } from "../../components/Theme";
-import Slide, { SLIDE_HEIGHT } from "./Slide";
-import Subslide from "./subSlide";
+import { View, StyleSheet, Dimensions, Image } from "react-native";
 import { interpolateColor, useScrollHandler } from "react-native-redash";
 import Animated, {
   divide,
@@ -15,9 +7,15 @@ import Animated, {
   interpolate,
   multiply,
 } from "react-native-reanimated";
-import Dot from "./Dot";
+
 import { useTheme } from "../../components";
-import { Routes, StackNavigationProps } from "../../components/Navigation";
+import { makeStyles, Theme } from "../../components/Theme";
+import { AuthNavigationProps } from "../../components/Navigation";
+
+import Slide, { SLIDE_HEIGHT } from "./Slide";
+import Subslide from "./subSlide";
+import Dot from "./Dot";
+
 const { width } = Dimensions.get("window");
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -100,9 +98,7 @@ const slides = [
   },
 ];
 export const assets = slides.map((slide) => slide.picture.src);
-const Onboarding = ({
-  navigation,
-}: StackNavigationProps<Routes, "Onboarding">) => {
+const Onboarding = ({ navigation }: AuthNavigationProps<"Onboarding">) => {
   const styles = useStyles();
   const theme = useTheme();
   const scroll = useRef<Animated.ScrollView>(null);

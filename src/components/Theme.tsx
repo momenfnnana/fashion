@@ -13,6 +13,14 @@ export const theme = {
     text: "rgba(12,13,52,0.7)",
     white: "#fff",
     grey: "#F4F0EF",
+    lightGrey: "#FAFAFA",
+    darkGrey: "#808080",
+    primaryLight: "#E7F9F7",
+    orange: "#FE5E33",
+    yellow: "#FFC641",
+    pink: "#FF87A2",
+    violet: "#442CB9",
+    lightBlue: "#BFEAF5",
   },
   spacing: {
     s: 8,
@@ -29,10 +37,10 @@ export const theme = {
   textVariants: {
     hero: {
       fontSize: 80,
+      lineHeight: 80,
       // fontFamily: "SFProText-Semibold",
       color: "white",
       alignSelf: "center",
-      lineHeight: 80,
     },
     title1: {
       fontSize: 28,
@@ -53,9 +61,15 @@ export const theme = {
     },
     button: {
       fontSize: 15,
-      // fontFamily: "SFProText-Semibold",
+      //  fontFamily: "SFProText-Semibold",
       color: "text",
       textAlign: "center",
+    },
+    header: {
+      fontSize: 12,
+      lineHeight: 24,
+      //  fontFamily: "SFProText-Semibold",
+      color: "secondary",
     },
   },
   breakpoints: {},
@@ -65,7 +79,6 @@ export type Theme = typeof theme;
 export const Box = createBox<Theme>();
 export const Text = createText<Theme>();
 export const useTheme = () => useReTheme<Theme>();
-
 type NamedStyles<T> = { [P in keyof T]: ViewStyle | TextStyle | ImageStyle };
 
 export const makeStyles = <T extends NamedStyles<T>>(
