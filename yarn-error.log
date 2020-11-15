@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add moment
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\pc\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts;C:\Python38;C:\Python27;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Program Files\OpenJDK\openjdk-8u262-b10\bin;C:\Users\pc\AppData\Local\Microsoft\WindowsApps;C:\Users\pc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pc\AppData\Local\GitHubDesktop\bin;C:\Users\pc\AppData\Local\Yarn\bin;C:\Program Files\Android\Android Studio\jre\bin;C:\Users\pc\AppData\Local\Android\Sdk\platform-tools;C:\Users\pc\AppData\Roaming\npm
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\pc\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts;C:\Python38;C:\Python27;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Program Files\OpenJDK\openjdk-8u262-b10\bin;C:\Users\pc\AppData\Local\Microsoft\WindowsApps;C:\Users\pc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pc\AppData\Local\GitHubDesktop\bin;C:\Users\pc\AppData\Local\Yarn\bin;C:\Program Files\Android\Android Studio\jre\bin;C:\Users\pc\AppData\Local\Android\Sdk\platform-tools;C:\Users\pc\AppData\Roaming\npm;C:\Program Files\heroku\bin
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\pc\Desktop\DitsCompany\WiliamTrain\Fashion\node_modules\@babel\compat-data\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\pc\Desktop\DitsCompany\WiliamTrain\Fashion\node_modules\@babel\generator\node_modules\.bin'
 
 npm manifest: 
   {
@@ -41,15 +41,13 @@ npm manifest:
       "expo-font": "~8.2.1",
       "expo-status-bar": "^1.0.0",
       "formik": "^2.1.7",
-      "intl": "^1.2.5",
       "react": "~16.11.0",
       "react-dom": "~16.11.0",
       "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
       "react-native-gesture-handler": "~1.6.0",
-      "react-native-intl": "^1.0.0",
       "react-native-keyboard-aware-scroll-view": "^0.9.3",
       "react-native-reanimated": "~1.9.0",
-      "react-native-redash": "^14.2.3",
+      "react-native-redash": "14.2.1",
       "react-native-safe-area-context": "~3.0.7",
       "react-native-screens": "~2.9.0",
       "react-native-svg": "12.1.0",
@@ -5139,11 +5137,6 @@ Lockfile:
       invariant "^2.2.4"
       prop-types "^15.7.2"
   
-  react-native-intl@^1.0.0:
-    version "1.0.0"
-    resolved "https://registry.yarnpkg.com/react-native-intl/-/react-native-intl-1.0.0.tgz#c1e2281125f925b323d1c8837586774876abe703"
-    integrity sha1-weIoESX5JbMj0ciDdYZ3SHar5wM=
-  
   react-native-iphone-x-helper@^1.0.3, react-native-iphone-x-helper@^1.2.1:
     version "1.2.1"
     resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.2.1.tgz#645e2ffbbb49e80844bb4cbbe34a126fda1e6772"
@@ -5164,10 +5157,10 @@ Lockfile:
     dependencies:
       fbjs "^1.0.0"
   
-  react-native-redash@^14.2.3:
-    version "14.2.3"
-    resolved "https://registry.yarnpkg.com/react-native-redash/-/react-native-redash-14.2.3.tgz#eaf61e832a7340e7f49fb465423451d0eee7571e"
-    integrity sha512-6EF192RIspcDyDQXd5dYmsm4rc19BBLrtlcJR4gn9jfRMy7Nn/MzEjgkKdVAYvpUmS0JtDxc5dcG5hZaizXL6Q==
+  react-native-redash@14.2.1:
+    version "14.2.1"
+    resolved "https://registry.yarnpkg.com/react-native-redash/-/react-native-redash-14.2.1.tgz#1a1690c65fe438a67ad24d0e80c3d5f38cea111a"
+    integrity sha512-7xeh7LCx9iKXLnRTzEK5bjvthcb/G2c/ktdRv2FoVVqMlzYeApdxeSM+QKsXaJ8ka/hZEABHqO576s2fNnVXrA==
     dependencies:
       abs-svg-path "^0.1.1"
       normalize-svg-path "^1.0.1"

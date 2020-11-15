@@ -45,7 +45,10 @@ export default function App() {
       <SafeAreaProvider>
         <StatusBar style="light" />
         <NavigationContainer>
-          <AppStack.Navigator initialRouteName="Home" headerMode="none">
+          <AppStack.Navigator
+            initialRouteName="Authentication"
+            headerMode="none"
+          >
             <AppStack.Screen
               name="Authentication"
               component={AuthenticationNavigator}
